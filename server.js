@@ -5,23 +5,31 @@ const server = express()
 
 server.use(express.static('public'))
 
-server.set("view engine", "html")
+server.set("view engine", "njk")
 
 nunjucks.configure("views", {
     express: server
 })
 
 server.get("/", function(req, res){
-    return res.render("index")
-})
-
-server.get("/views/about.html", function(req, res){
     return res.render("about")
 })
 
-server.get("/views/container.html", function(req, res){
+server.get("/views/about.njk", function(req, res){
+    return res.render("about")
+})
+
+server.get("/views/container.njk", function(req, res){
     return res.render("container")
 })
+
+server.get("/views/layout.njk", function(req, res){
+    return res.render("layout")
+})
+
+server.use(function(req, res) {
+    res.status(404).render("not-found")
+});
 
 server.listen(3000, function(){
     console.log("Server is running!")
