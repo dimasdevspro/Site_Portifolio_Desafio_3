@@ -3,27 +3,23 @@
 {% block content %}
 
     <div id="img">
-        <img src="https://avatars1.githubusercontent.com/u/28929274?s=280&v=4" alt="">
+        <img src="{{about.avatar_url}}" alt="">
     </div>
     <div class="infos">
-        <h2>Descrição da empresa</h2>
-        <p>Mais do que uma plataforma de educação em tecnologia, somos uma comunidade incrível de programadores em busca
-            do próximo nível</p>
-        <h2>Principais tecnologias utilizadas</h2>
+        <h2>{{about.title_info}}</h2>
+        <p>{{about.description_title}}</p>
+        <h2>{{about.title_tech}}</h2>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Node JS</li>
-            <li>React JS</li>
-            <li>React Native</li>
+            {% for tech in about.techs %}
+            <li>{{tech.name}}</li>
+            {% endfor %}
         </ul>
     </div>
     <footer>
         <div id="link-footer" class="links">
-            <a href="https://github.com/rocketseat-education/" target="_blank">Github</a>
-            <a href="https://www.instagram.com/rocketseat_oficial/?hl=en" target="_blank">Instagram</a>
-            <a href="https://pt-br.facebook.com/rocketseat/" target="_blank">Facebook</a>
+            {% for link in about.links %}
+            <a href="{{link.url}}" target="_blank">{{link.name}}</a>
+            {% endfor %}
         </div>
     
         {% endblock %}
