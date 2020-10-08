@@ -22,12 +22,15 @@
         margin: 30px;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .links a {
         margin: 0 16px;
         color: var(--color-rocket);
         font-size: 18px;
         line-height: 28px;
-        text-decoration: none;
 
     }
 
@@ -116,15 +119,22 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 30px;
-       text-align: center;
+        text-align: center;
+       
     }
 
     .card_course {
+        position: relative;
         background-color: #141414;
         width: 300px;
         height: 550px;
+        padding: 2px;
         border-radius: 30px;
+        top: 0;
         cursor: pointer;
+        transition: 600ms;
+        box-shadow: ;
+        
     }
 
     .card_container_course {
@@ -238,4 +248,15 @@
         height: 90%;
         position: absolute;
         top: 5%;
+    }
+
+    /*=============CARD TRANSITION===============*/
+
+    .card_course {
+        
+        
+    }
+    #starter:hover{
+       top: -4px;
+       border: 5px solid #7159c1;
     }
