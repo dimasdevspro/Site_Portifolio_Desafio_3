@@ -202,17 +202,30 @@
         height: 100%;
         position: fixed;
         top: 0;
-        opacity: 1;
+        opacity: 0;
+        visibility: hidden;
     }
 
     .modal-course {
         background-color: #141414;
         width: 300px;
         height: 550px;
-        margin: 10vh auto;
+        margin: 150px 330px;
         position: relative;
-        text-align: center;
+        border-radius: 30px;
+        
     }
+
+    .modal-course .close-modal {
+        color: #50fa7b;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        cursor: pointer;
+
+    }
+
+    
     /*=========== MODAL.ACTIVE================*/
 
     .modal_overlay.active {

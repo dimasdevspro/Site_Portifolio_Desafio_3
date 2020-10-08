@@ -17,3 +17,14 @@ document.querySelector(".close_modal").addEventListener("click", function () {
 document.querySelector(".maximize_modal").addEventListener("click", function (){
     modalOverlay.classList.contains('active')
 })
+
+/*=========================MODAL-COURSE=====================*/
+
+const modalOverlayCourse = document.querySelector('.modal-overlay-course') 
+const cardsCourses = document.querySelectorAll('.card_course')
+
+for (let cardCourse of cardsCourses) {
+    card_course.addEventListener('click', function(){
+        
+    })
+}

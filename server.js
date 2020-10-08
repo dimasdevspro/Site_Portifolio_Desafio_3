@@ -7,7 +7,7 @@ const blogs = require("./data")
 
 server.use(express.static('public'))
 
-server.set("view engine", "njk")
+server.set("view engine", "njk",)
 
 nunjucks.configure("views", {
     express: server
@@ -48,6 +48,9 @@ server.get("/layout.njk", function(req, res){
     return res.render("layout")
 })
 
+server.get("/cards_courses.html", function(req, res){
+    return res.render("cards_courses")
+})
 server.use(function(req, res) {
     res.status(404).render("not-found")
 });
