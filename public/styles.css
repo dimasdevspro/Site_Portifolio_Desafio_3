@@ -72,6 +72,22 @@
         border-bottom: 1px solid var(--color-green);
     }
 
+    .ad_starter #title {
+        color: #ffffff;
+        font-size: 32px;
+        text-align: center;
+        margin: 0 370px;
+        line-height: 42px;
+    }
+
+    .ad_starter #subtitle {
+        color:#777777;
+        font-size: 22px;
+        line-height: 32px;
+        text-align: center;
+        margin: 42px 0;
+    }
+
     /*========CARD========*/
 
     .cards {
@@ -111,6 +127,25 @@
         font-size: 12px;
     }
 
+    .cards_tech {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: 30px;
+    }
+    .card_tech {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    
+    }
+
+    .img_card img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+    }
+
     /*==========CARD COURSES=========*/
 
     .cards_courses {
@@ -128,12 +163,11 @@
         background-color: #141414;
         width: 300px;
         height: 550px;
-        padding: 2px;
+        padding: 4px;
         border-radius: 30px;
         top: 0;
         cursor: pointer;
-        transition: 600ms;
-        box-shadow: ;
+        transition: all .2s ease-in-out;
         
     }
 
@@ -252,11 +286,17 @@
 
     /*=============CARD TRANSITION===============*/
 
-    .card_course {
-        
-        
-    }
     #starter:hover{
-       top: -4px;
-       border: 5px solid #7159c1;
+       top: -2px;
+       border: 3px solid #7159c1;
     }
+
+    #launchbase:hover{
+        top: -2px;
+        border: 3px solid  #f39821;
+     }
+
+     #gostack:hover{
+        top: -2px;
+        border: 3px solid  #50fa7b;
+     }
