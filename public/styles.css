@@ -1,302 +1,409 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-    :root {
-        --color-green: #50fa7b;
-        --color-rocket: #7159c1;
-    }
-    
-    * {
-        margin: 0;
-        border: 0;
-        padding: 0;
-    }
+:root {
+  --color-green: #50fa7b;
+  --color-rocket: #7159c1;
+}
 
-    body {
-        background: black;
-        font-family: 'Roboto', sans-serif;
-    }
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
 
-    header, footer {
-        padding: 30px;
-        text-align: center;
-        margin: 30px;
-    }
+body {
+  background: black;
+  font-family: "Roboto", sans-serif;
+}
 
-    a {
-        text-decoration: none;
-    }
+header {
+  position: sticky;
+  top: 0;
+  background-color: #141414;
+}
 
-    .links a {
-        margin: 0 16px;
-        color: var(--color-rocket);
-        font-size: 18px;
-        line-height: 28px;
+header,
+footer {
+  padding: 30px;
+  text-align: center;
+  margin: 0;
+}
 
-    }
+a {
+  text-decoration: none;
+}
 
-    .links a:hover {
-        color: var(--color-green);
-        transition: 600ms;
-    }
-    
-    #img {
-        text-align: center;
-    }
-    
-    #img img{
-        border-radius: 50%;
-        border: 5px solid var(--color-rocket);
-    }
+.links a {
+  margin: 0 16px;
+  color: var(--color-rocket);
+  font-size: 18px;
+  line-height: 28px;
+}
 
-    .infos {
-        text-align: center;
-        color: white;
-        font-size: 18px;
-        }
+.links a:hover {
+  color: var(--color-green);
+  transition: 600ms;
+}
 
-    .infos h2 {
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
+#img {
+  text-align: center;
+}
 
-    .infos p {
-        width: 500px;
-        margin: 30px auto
-    }
+#img img {
+  border-radius: 50%;
+  border: 5px solid var(--color-rocket);
+}
 
-    .infos li {
-        line-height: 28px;
-    }
+.infos {
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
 
-    #link-footer a {
-        border-bottom: 1px solid var(--color-green);
-    }
+.infos h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 
-    .ad_starter #title {
-        color: #ffffff;
-        font-size: 32px;
-        text-align: center;
-        margin: 0 370px;
-        line-height: 42px;
-    }
+.infos p {
+  width: 500px;
+  margin: 30px auto;
+}
 
-    .ad_starter #subtitle {
-        color:#777777;
-        font-size: 22px;
-        line-height: 32px;
-        text-align: center;
-        margin: 42px 0;
-    }
+.infos li {
+  line-height: 28px;
+}
 
-    /*========CARD========*/
+#link-footer a {
+  border-bottom: 1px solid var(--color-green);
+}
 
-    .cards {
-        max-width: 800px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 10px;
-        margin-top: 20px
-    }
+/*========CARD========*/
 
-    .card {
-        background-color: #7159c1;
-        margin-bottom: 100px;
-        
-    }
-    .card_container {
-        display: grid;
-        align-items: center;
-    }
-    .card_container img {
-        max-width: 100%;
-    }
+.cards {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
 
-    .card__content,
-    .card__info,
-    .not-found {
-        padding: 24px;
-        text-align: center;
-        color: white;
-    }
+.card {
+  background-color: #7159c1;
+  margin-bottom: 100px;
+}
+.card_container {
+  display: grid;
+  align-items: center;
+}
+.card_container img {
+  max-width: 100%;
+}
 
-    .card__content h2{
-        font-size: 18px;
-    }
-    .card_info {
-        font-size: 12px;
-    }
+.card__content,
+.card__info,
+.not-found {
+  padding: 24px;
+  text-align: center;
+  color: white;
+}
 
-    .cards_tech {
-        position: relative;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        gap: 30px;
-    }
-    .card_tech {
-        width: 100px;
-        height: 100px;
-        position: absolute;
-    
-    }
+.card__content h2 {
+  font-size: 18px;
+}
+.card_info {
+  font-size: 12px;
+}
+/*==========CARD COURSES=========*/
 
-    .img_card img{
-        width: 100px;
-        height: 100px;
-        position: absolute;
-    }
+.cards_courses {
+  width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  text-align: center;
+}
 
-    /*==========CARD COURSES=========*/
+.card_course {
+  position: relative;
+  background-color: #141414;
+  width: 300px;
+  height: 450px;
+  padding: 4px;
+  border-radius: 30px;
+  margin: 30px 0;
+  top: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
 
-    .cards_courses {
-        width: 900px;
-        margin: 0 auto;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px;
-        text-align: center;
-       
-    }
+.card_container_course {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  margin-top: 60px;
+}
 
-    .card_course {
-        position: relative;
-        background-color: #141414;
-        width: 300px;
-        height: 550px;
-        padding: 4px;
-        border-radius: 30px;
-        top: 0;
-        cursor: pointer;
-        transition: all .2s ease-in-out;
-        
-    }
+.card_course_image img{
+    margin-bottom: 20px;
+}
 
-    .card_container_course {
-        text-align: center;
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        align-items: center;
-        margin-top: 60px;
-    }
+.card_course_titles {
+    margin: 3px 0;
+}
 
-    .card_course_title{
-        color: white;
-        font-size: 32px;
-        font-weight: bold;
-    }
+.card_course_title {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
 
-    .card_course_subtitle {
-        color: #777777;
-        letter-spacing: 4px;
-    }
+.card_course_subtitle {
+  color: #777777;
+  letter-spacing: 4px;
+}
 
-    .card_course_info {
-        margin: auto;
-    }
+.card_course_info {
+  margin: 6px 0;
+}
 
-    .card_course_info p{
-        color: #777777;
-        line-height: 30px;
-        word-spacing: 4px;
-    }
+.card_course_info p {
+  color: #777777;
+  line-height: 30px;
+  word-spacing: 4px;
+}
 
-    #em_starter {
-        color: var(--color-rocket);
-    }
+#em_starter {
+  color: var(--color-rocket);
+}
 
-    #em_launchbase {
-        color: #f39821;
-    }
+#em_launchbase {
+  color: #f39821;
+}
 
-    #em_gostack {
-        color: var(--color-green);
-    }
+#em_gostack {
+  color: var(--color-green);
+}
 
-    /*========== MODAL ===========*/
+/*=========== CARDS STARTER / LAUNCHBASE / GOSTACK =============*/
 
-    .modal_overlay {
-        background-color: rgba(0, 0, 0, 0.7);
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        opacity: 0;   
-        visibility: hidden;
-    }
+.cards_tech {
+  display: grid;
+  grid-template-columns: repeat(5, 150px);
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
 
-    .modal {
-        background-color: white;
-        width: 90%;
-        height: 90%;
-        margin: 5vh auto;
-        position: relative;
-    }
+.card_tech {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  display: grid;
+  grid-template-rows: 1.5fr 1fr;
+  background-color: #141414;
+  border-radius: 15px;
+}
 
-    .modal .close_modal {
-        color: black;
-        position: absolute;
-        right: 8px;
-        top: 8px;
-        cursor: pointer;
-    }
+.card_tech:hover {
+  transition: all 0.2 ease-in-out;
+  border: 3px solid #777777;
+}
 
-    .modal-overlay-course {
-        background-color: rgba(0, 0, 0, 0.7);
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        opacity: 0;
-        visibility: hidden;
-    }
+.img_card img {
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  border-radius: 15px;
+  margin: 10px 42.5px;
+}
 
-    .modal-course {
-        background-color: #141414;
-        width: 300px;
-        height: 550px;
-        margin: 150px 330px;
-        position: relative;
-        border-radius: 30px;
-        
-    }
+.img_title p {
+  position: absolute;
+  width: 150px;
+  height: 60px;
+  text-align: center;
+  color: #ffffff;
+  font-size: 20px;
+}
 
-    .modal-course .close-modal {
-        color: #50fa7b;
-        position: absolute;
-        right: 16px;
-        top: 16px;
-        cursor: pointer;
+course {
+  position: relative;
+}
 
-    }
+.course .img_course {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
 
-    
-    /*=========== MODAL.ACTIVE================*/
+.course .img_course img {
+  border-radius: 15px;
+}
 
-    .modal_overlay.active {
-        opacity: 1;
-        visibility: visible;
-    }
+.course .title {
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 44px;
+}
 
-    iframe {
-        width: 100%;
-        height: 90%;
-        position: absolute;
-        top: 5%;
-    }
+.course .course_type {
+  color: #777777;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-    /*=============CARD TRANSITION===============*/
+.course .title_info {
+  color: #ffffff;
+  font-size: 22px;
+  text-align: center;
+  margin: 0 370px;
+  line-height: 32px;
+}
 
-    #starter:hover{
-       top: -2px;
-       border: 3px solid #7159c1;
-    }
+.course .subtitle {
+  color: #777777;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  margin: 42px 0;
+}
 
-    #launchbase:hover{
-        top: -2px;
-        border: 3px solid  #f39821;
-     }
+.registration {
+    width: 500px;
+    height: 100px;
+    padding: 30px;
+    margin: auto;
+}
+.registration p {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+.send_email_launchbase input {
+    width: 320px;
+    height: 20px;
+    margin: auto;
+    background-color: #ecbd80;
+    text-align: center;
+}
 
-     #gostack:hover{
-        top: -2px;
-        border: 3px solid  #50fa7b;
-     }
+.send_email_launchbase button {
+    width: 155px;
+    height: 25px;
+    margin: 0 10px;
+    background-color: #f39821;
+    cursor: pointer;
+}
+
+.send_email button:hover {
+    transition: all 0.6 ease-in-out;
+    border: 3px solid #141414;
+}
+
+.send_email_gostack input {
+  width: 320px;
+  height: 20px;
+  margin: auto;
+  background-color: #90f7aa;
+  text-align: center;
+}
+
+.send_email_gostack button {
+  width: 155px;
+  height: 25px;
+  margin: 0 10px;
+  background-color: var(--color-green);
+  cursor: pointer;
+}
+/*========== MODAL ===========*/
+
+.modal_overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 90%;
+  height: 90%;
+  margin: 5vh auto;
+  position: relative;
+}
+
+.modal .close_modal {
+  color: black;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.modal-overlay-course {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-course {
+  background-color: #141414;
+  width: 300px;
+  height: 550px;
+  margin: 150px 330px;
+  position: relative;
+  border-radius: 30px;
+}
+
+.modal-course .close-modal {
+  color: #50fa7b;
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
+}
+
+/*=========== MODAL.ACTIVE================*/
+
+.modal_overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+}
+
+/*=============CARD TRANSITION===============*/
+
+#starter:hover {
+  top: -2px;
+  border: 3px solid #7159c1;
+}
+
+#launchbase:hover {
+  top: -2px;
+  border: 3px solid #f39821;
+}
+
+#gostack:hover {
+  top: -2px;
+  border: 3px solid #50fa7b;
+}
