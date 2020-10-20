@@ -1,0 +1,30 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <section class="cards_courses">
+
+        {% for teachingUnit in teachingUnits %}
+
+        <a href="{{teachingUnit.page_link}}.njk" class="card_course" id="{{teachingUnit.id_borderligth}}">
+            <div class="card_container_course">
+                <div class="card_course_image">
+                    <img src="assets/{{teachingUnit.logo}}.png" alt="">
+                </div>
+                <div>
+                    <p class="card_course_title">{{teachingUnit.name_course}}</p>
+                    <p class="card_course_subtitle">{{teachingUnit.type_course}}</p>
+                </div>
+                <div class="card_course_info">
+                    <p>
+                        <strong id="{{teachingUnit.id_spotligth}}">{{teachingUnit.discription_info.spotligth}}</strong>{{teachingUnit.discription_info.normal}}</p>
+                </div>
+            </div>
+        </a>
+
+        {% endfor %}
+    </section>
+
+    <script src="/public/script.js"></script>
+
+{% endblock %}

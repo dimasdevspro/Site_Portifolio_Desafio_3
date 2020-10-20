@@ -148,7 +148,9 @@ a {
 }
 
 .card_course_image img{
-    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+
 }
 
 .card_course_titles {
@@ -235,12 +237,15 @@ course {
 }
 
 .course .img_course {
+  width: 220px;
+  height: 220px;
   padding: 30px;
   display: flex;
   justify-content: center;
 }
 
 .course .img_course img {
+
   border-radius: 15px;
 }
 

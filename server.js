@@ -1,13 +1,17 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
+const blogs = require("./data")
+const courses = require("./courses-data")
 
 const server = express()
-const blogs = require("./data")
+
 
 
 server.use(express.static('public'))
+server.use(express.static('assets'))
 
-server.set("view engine", "njk",)
+server.set("view engine", "njk")
+
 
 nunjucks.configure("views", {
     express: server
@@ -48,14 +52,28 @@ server.get("/layout.njk", function(req, res){
     return res.render("layout")
 })
 
-server.get("/cards_courses.html", function(req, res){
-    return res.render("cards_courses")
+server.get("/courses.njk", function(req, res){
+
+    return res.render("courses", {teachingUnits: courses})
 })
+
+server.get("/1starter.njk", function(req, res){
+    return res.render("1starter")
+})
+
+server.get("/2launchbase.njk", function(req, res){
+    return res.render("2launchbase")
+})
+
+server.get("/3gostack.njk", function(req, res){
+    return res.render("3gostack.njk")
+})
+
 server.use(function(req, res) {
     res.status(404).render("not-found")
 });
 
-server.listen(3000, function(){
+server.listen(3300, function(){
     console.log("Server is running!")
 })
 
