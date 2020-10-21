@@ -47,6 +47,7 @@ a {
 
 #img {
   text-align: center;
+  margin: 10px;
 }
 
 #img img {
@@ -58,6 +59,7 @@ a {
   text-align: center;
   color: white;
   font-size: 18px;
+  margin: 10px;
 }
 
 .infos h2 {
@@ -90,22 +92,28 @@ a {
 }
 
 .card {
-  background-color: #7159c1;
+  width: 260px;
+  height: 340px;
+  border-radius: 15px;
   margin-bottom: 100px;
+  background-color: #7159c1;
+  display: flex;
+    align-items: inherit;
 }
 .card_container {
   display: grid;
-  align-items: center;
+  grid-template-rows: 1fr .5fr .25fr .25fr;
+  justify-content: center;
   border-radius: 15px;
 }
 .card_container img {
   max-width: 100%;
+  border-radius: 15px 15px 0 0;
+  margin-bottom: 15px;
 }
 
-.card__content,
-.card__info,
+.card_container p,
 .not-found {
-  padding: 24px;
   text-align: center;
   color: white;
 }
@@ -177,6 +185,7 @@ a {
   color: #777777;
   line-height: 30px;
   word-spacing: 4px;
+  margin-top: inherit;
 }
 
 #em_starter {
@@ -238,15 +247,14 @@ course {
 }
 
 .course .img_course {
-  width: 220px;
-  height: 220px;
   padding: 30px;
   display: flex;
+  margin: auto;
   justify-content: center;
 }
 
 .course .img_course img {
-
+  
   border-radius: 15px;
 }
 

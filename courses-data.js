@@ -2,7 +2,7 @@ module.exports = [
     { 
         page_link:"1starter.njk",
         id_borderligth: "starter",
-        logo:"starter_show.png",
+        logo:"starter.png",
         name_course: "Starter",
         type_course: "CURSO",
         discription_info: {
