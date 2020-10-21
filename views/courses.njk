@@ -6,10 +6,10 @@
 
         {% for teachingUnit in teachingUnits %}
 
-        <a href="{{teachingUnit.page_link}}.njk" class="card_course" id="{{teachingUnit.id_borderligth}}">
+        <a href="{{teachingUnit.page_link}}" class="card_course" id="{{teachingUnit.id_borderligth}}">
             <div class="card_container_course">
                 <div class="card_course_image">
-                    <img src="assets/{{teachingUnit.logo}}.png" alt="">
+                    <img src="{{teachingUnit.logo}}" alt="">
                 </div>
                 <div>
                     <p class="card_course_title">{{teachingUnit.name_course}}</p>
@@ -24,7 +24,5 @@
 
         {% endfor %}
     </section>
-
-    <script src="/public/script.js"></script>
 
 {% endblock %}

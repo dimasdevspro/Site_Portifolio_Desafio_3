@@ -73,7 +73,7 @@ server.use(function(req, res) {
     res.status(404).render("not-found")
 });
 
-server.listen(3300, function(){
+server.listen(3000, function(){
     console.log("Server is running!")
 })
 

@@ -1,5 +1,6 @@
 const modalOverlay = document.querySelector('.modal_overlay');
 const cards = document.querySelectorAll(".card");
+const modal = document.querySelector('.modal')
 
 for (let card of cards) {
     card.addEventListener("click", function () {
@@ -15,7 +16,11 @@ document.querySelector(".close_modal").addEventListener("click", function () {
 })
 
 document.querySelector(".maximize_modal").addEventListener("click", function (){
-    modalOverlay.classList.contains('active')
+    modal.classList.remove('minimize')
+})
+
+document.querySelector(".minimize_modal").addEventListener('click', function(){
+    modal.classList.add('minimize')
 })
 
 /*=========================MODAL-COURSE=====================*/

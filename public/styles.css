@@ -96,6 +96,7 @@ a {
 .card_container {
   display: grid;
   align-items: center;
+  border-radius: 15px;
 }
 .card_container img {
   max-width: 100%;
@@ -355,6 +356,22 @@ course {
   cursor: pointer;
 }
 
+.modal .maximize_modal {
+  color: black;
+  position: absolute;
+  right:26px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.modal .minimize_modal {
+  color: black;
+  position: absolute;
+  right:46px;
+  top: 8px;
+  cursor: pointer;
+}
+
 .modal-overlay-course {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
@@ -394,6 +411,14 @@ iframe {
   height: 90%;
   position: absolute;
   top: 5%;
+}
+
+.modal.minimize {
+  margin-top:600px
+}
+
+.modal.maximize {
+  margin: 5vh auto;
 }
 
 /*=============CARD TRANSITION===============*/

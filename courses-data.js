@@ -1,8 +1,8 @@
 module.exports = [
     { 
-        page_link:"1starter",
+        page_link:"1starter.njk",
         id_borderligth: "starter",
-        logo:"starter_show",
+        logo:"starter_show.png",
         name_course: "Starter",
         type_course: "CURSO",
         discription_info: {
@@ -13,9 +13,9 @@ module.exports = [
         
         },
     { 
-        page_link:"2launchbase",
+        page_link:"2launchbase.njk",
         id_borderligth: "launchbase",
-        logo:"luanchbase",
+        logo:"launchbase.png",
         name_course: "Launchbase",
         type_course: "BOOTCAMP",
         discription_info: {
@@ -26,9 +26,9 @@ module.exports = [
         
         },
     { 
-        page_link:"3gostack",
+        page_link:"3gostack.njk",
         id_borderligth: "gostack",
-    logo:"gostack2",
+    logo:"gostack2.png",
     name_course: "Gostack",
     type_course: "BOOTCAMP",
     discription_info: {
